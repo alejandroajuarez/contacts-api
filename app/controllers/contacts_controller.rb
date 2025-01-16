@@ -4,4 +4,10 @@ class ContactsController < ApplicationController
     puts "contact info: #{contact}"
     render json: contact
   end
+
+  def show 
+    @contact = Contact.find_by(id: 1)
+    @contacts = 
+    render template: "contacts/show"
+  end
 end

@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   get "/contact_details" => "contacts#contact"
+  get "/one_contact" => "contacts#show"
 end
